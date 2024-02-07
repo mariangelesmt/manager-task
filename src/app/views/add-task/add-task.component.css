@@ -1,0 +1,15 @@
+.task-form {
+    margin: 2rem;
+    padding: 1rem;
+    .form-group {
+        padding-bottom: 2rem;
+    }
+    .succesful {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}

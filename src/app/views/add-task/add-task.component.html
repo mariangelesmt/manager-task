@@ -1,0 +1,28 @@
+<div class="card task-form">
+  <ng-container *ngIf="!showSuccessfullMessage; else successfullMessage">
+    <h5>Nueva tarea:</h5>
+    <form [formGroup]="taskForm">
+      <div class="form-group">
+        <label for="title">Título*</label>
+        <input type="text" class="form-control" id="title" formControlName="title" />
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción*</label>
+        <textarea class="form-control" id="description" rows="3" formControlName="description"></textarea>
+      </div>
+      <div *ngIf="showRequiredMessage">
+        <span class="text-danger">Hay campos obligatorios sin rellenar</span>
+      </div>
+      <button class="btn btn-primary" (click)="addTask()">Añadir</button>
+    </form>
+  </ng-container>
+  <ng-template #successfullMessage>
+    <div class="succesful">
+      <span><i class="fa-solid fa-check text-success pe-1"></i>La tarea se ha
+        añadido exitósamente</span>
+      <button type="button" routerLink="/home" class="btn btn-secondary">
+        Ver tareas
+      </button>
+    </div>
+  </ng-template>
+</div>

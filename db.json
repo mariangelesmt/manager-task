@@ -1,0 +1,79 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Desarrollar funcionalidad de autenticación",
+      "description": "Implementar un sistema de autenticación seguro para los usuarios. Debe incluir verificación de dos factores.",
+      "status": true
+    },
+    {
+      "id": "2",
+      "title": "Crear API REST para el módulo de usuarios",
+      "description": "Diseñar y desarrollar una API REST para gestionar las operaciones relacionadas con los usuarios. Debe incluir endpoints para crear, leer, actualizar y eliminar usuarios.",
+      "status": true
+    },
+    {
+      "id": "3",
+      "title": "Diseñar interfaz de usuario para el panel de administración",
+      "description": "Crear mockups y prototipos para el panel de administración. Debe ser intuitivo y fácil de usar para los usuarios con privilegios administrativos.",
+      "status": true
+    },
+    {
+      "id": "84d4"
+    },
+    {
+      "id": null,
+      "title": "Prueba nueva tarea",
+      "description": "Nueva tarea",
+      "status": false
+    },
+    {
+      "id": "d2ae",
+      "title": "Nueva prueba con id?",
+      "description": "Descripcion",
+      "status": true
+    },
+    {
+      "id": "f2c1",
+      "title": "Añadimos nueva tarea",
+      "description": "Descripcióooon",
+      "status": false
+    },
+    {
+      "id": "95c3",
+      "title": "Vamos a crear una nueva tarea",
+      "description": "Esta tarea es la última que creo????",
+      "status": false
+    },
+    {
+      "id": "0697",
+      "title": "Creo la últimaa",
+      "description": "Nueva tarea",
+      "status": true
+    },
+    {
+      "id": "d774",
+      "title": "Nueva tarea",
+      "description": "Añadir tarea",
+      "status": false
+    },
+    {
+      "id": "9d0d",
+      "title": "1111",
+      "description": "Nueva tarea",
+      "status": false
+    },
+    {
+      "id": "11ed",
+      "title": "ddddd",
+      "description": "xxxx",
+      "status": false
+    },
+    {
+      "id": "c306",
+      "title": "eeee",
+      "description": "sssss",
+      "status": false
+    }
+  ]
+}

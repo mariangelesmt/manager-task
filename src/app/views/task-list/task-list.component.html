@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="title">
+    <h3>Lista de tareas:</h3>
+    <button type="button" class="btn btn-primary" routerLink="/add-task">
+      <i class="fa-solid fa-plus"></i>Añadir tarea
+    </button>
+  </div>
+</div>
+<div class="row task-list">
+  <ng-container *ngFor="let task of taskList">
+    <div class="col-4">
+      <div class="card mt-1">
+        <div class="card-title">
+          <h5>{{ task.title }}</h5>
+          <button type="button" (click)="changeStatus(task)" class="btn btn-light fa-solid fa-trash"
+            (click)="onDelete(task.id)"></button>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{ task.description }}</p>
+        </div>
+        <div class="card-footer">
+          <ng-container *ngIf="task.status; else pendingTask">
+            <span><i class="fa-solid fa-circle-check text-success pe-1"></i>Tarea
+              finalizada</span>
+            <button type="button" (click)="changeStatus(task)" class="btn btn-secondary">
+              <i class="fa-solid fa-rotate-right pe-1"></i>Continuar
+            </button>
+          </ng-container>
+          <ng-template #pendingTask>
+            <span><i class="fa-solid fa-clock text-warning pe-1"></i>Tarea
+              pendiente</span>
+            <button type="button" (click)="changeStatus(task)" class="btn btn-secondary">
+              <i class="fa-solid fa-check pe-1"></i>Finalizar
+            </button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

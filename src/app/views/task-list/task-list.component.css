@@ -1,0 +1,26 @@
+.title {
+  margin: 2rem;
+  border-bottom: 1px solid #9b9999;
+  display: flex;
+  justify-content: space-between;
+  .btn {
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+  }
+}
+.task-list {
+  margin: 2rem;
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    i {
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
